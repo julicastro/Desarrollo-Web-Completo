@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="stylesheet" href="src/scss/style.css">
+
+    <link rel="shortcut icon" href="src/img/pua-de-guitarra.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    Rock & EDM Festival
+                    <span>Febrero 2022, Buenos Aires, Argentina</span>
+                </h2>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="sobre-festival contenedor">
+        <div class="imagen">
+            <img src="src/img/imagen_vocalista.jpg" alt="imagen vocalista">
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Febrero 2022, Buenos Aires, Argentina</p>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, odit? Voluptatibus ea
+                impedit
+                asperiores dolorum consequuntur dolorem, omnis vel maiores dignissimos praesentium, error iusto
+                laboriosam iure ad quis rerum itaque.</p>
+        </div>
+    </div>
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Metallica</span> </li>
+                    <li>22:00 | <span>Pearl Jam</span> </li>
+                    <li>20:00 | <span>Korn</span> </li>
+                    <li>19:00 | <span>Muse</span> </li>
+                    <li>18:00 | <span>Breaking Benjamin</span> </li>
+                    <li>17:00 | <span>30 Seconds To Mars</span> </li>
+                </ul>
+
+            </div>
+
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Deadmau5</span> </li>
+                    <li>22:00 | <span>Tiësto</span> </li>
+                    <li>20:00 | <span>Hardwell</span> </li>
+                    <li>19:00 | <span>Dash Berlin</span> </li>
+                    <li>18:00 | <span>Fedde Legrand</span> </li>
+                    <li>17:00 | <span>Audien</span> </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <p class="dia">Sábado 22</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Red Hot Chili Peppers</span> </li>
+                    <li>22:00 | <span>The Killers</span> </li>
+                    <li>20:00 | <span>Deftones</span> </li>
+                    <li>19:00 | <span>Limp Bizkit</span> </li>
+                    <li>18:00 | <span>Papa Roach</span> </li>
+                    <li>17:00 | <span>Lamb Of God</span> </li>
+                </ul>
+
+            </div>
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Paul Van Dyk</span> </li>
+                    <li>22:00 | <span>Armin Van Buuren</span> </li>
+                    <li>20:00 | <span>Above & Beyond</span> </li>
+                    <li>19:00 | <span>Eric Prydz</span> </li>
+                    <li>18:00 | <span>Ferry Corsten</span> </li>
+                    <li>17:00 | <span>Vini Vici</span> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+
+        <div class="contenedor-boletos contenedor">
+            <div class="basico plan">
+                <p>Pase 1 Día</p>
+
+                <table class="pase">
+                    <thead>
+                        <tr>
+                            <th>
+                                Incluye
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                Acceso a todos los Escenarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Comida y Bebida
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>$2500</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="premium plan">
+                <p>Pase 2 Días</p>
+
+                <table class="pase">
+                    <thead>
+                        <tr>
+                            <th>
+                                Incluye
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                Acceso a todos los Escenarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Comida y Bebida
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Camisa del evento
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Acceso VIP
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>$4300</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Rock & EDM Festival. &copy; Todos Los Derechos Reservados</p>
+    </footer>
+
+
+
+    <script src="src/js/scrpit.js"></script>
+</body>
+
+</html>
