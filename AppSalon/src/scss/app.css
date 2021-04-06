@@ -547,4 +547,82 @@ body {
 .paginacion button:hover {
   cursor: pointer;
 }
+
+.formulario {
+  width: 100%;
+}
+
+.campo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10rem;
+          flex: 0 0 10rem;
+  color: #FFFFFF;
+}
+
+.campo input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.alerta {
+  padding: 2.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  display: block;
+}
+
+.alerta.error {
+  background-color: #c20000;
+}
+
+.invalidar-cita {
+  text-align: center;
+  margin: 2.5rem 0;
+  text-transform: uppercase;
+}
+
+.contenido-resumen {
+  margin-bottom: 2.5rem 0;
+}
+
+.contenido-resumen p {
+  margin-bottom: .5rem;
+}
+
+.contenido-resumen p span {
+  font-weight: 700;
+  color: #0da6f3;
+  font-size: 2.4rem;
+}
+
+.contenido-resumen .resumen-servicios h3 {
+  margin: 2.5rem 0;
+}
+
+.contenido-resumen .resumen-servicios .contenedor-servicio {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #43453c;
+}
+
+.contenido-resumen .resumen-servicios .contenedor-servicio .precio {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0da6f3;
+}
 /*# sourceMappingURL=app.css.map */
