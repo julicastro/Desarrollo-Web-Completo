@@ -1,0 +1,74 @@
+.home{
+    background-image: url("/src/img/banner1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include tablet{
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .header-logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        img{
+            width: 40%;
+            @include tablet{
+                width: 70%;
+            }
+        }
+    }
+}
+.header-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem ;
+    a{
+        display: block;
+        margin: 1rem;
+        color: $blanco;
+    }
+    @include tablet{
+    flex-direction: row;
+    gap: 1.5em;
+    }
+}
+
+.home-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: $dorado;
+        font-size: 4rem;
+        margin: 1rem 0;
+        @include tablet{ 
+            font-size: 7rem;
+        }
+    }
+    p{
+        margin: 1rem;
+        font-size: 1.5rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+    p:last-of-type{
+        color: $dorado;
+        font-style: italic;
+        font-size: 1.5rem;
+        @include tablet{
+            font-size: 2.5rem;
+        }
+    }
+
+}
