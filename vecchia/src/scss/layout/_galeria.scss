@@ -1,0 +1,16 @@
+.galeria{
+    background-color: $negro;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.glaeria-img{
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    img{
+    grid-template-columns: repeat (2, 1fr);
+        
+    }
+        
+}
+    

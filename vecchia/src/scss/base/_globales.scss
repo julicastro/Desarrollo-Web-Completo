@@ -29,7 +29,7 @@ img {
 
 h1, h2, h3 {
     font-family: $fuente_principal;
-    margin: 0 0 $separacion / 2 0 ;
+    margin: 0;
     font-weight: 900;
     text-align: center;
 }
@@ -42,5 +42,4 @@ h2 {
 }
 h3 {
     font-size: 3rem;
-    text-align: center;
 }

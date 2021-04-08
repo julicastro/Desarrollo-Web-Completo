@@ -28,47 +28,36 @@
     }
 }
 .header-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    width: 100%;    
+    text-align: center;
     margin: 2rem 2rem ;
+    @include tablet{
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5em;
+    }
     a{
         display: block;
         margin: 1rem;
+        padding: .5rem;
         color: $blanco;
-    }
-    @include tablet{
-    flex-direction: row;
-    gap: 1.5em;
+        background: rgba(255, 255, 255, .3);
+        font-size: 2.4rem;
+        &:hover{
+            background: rgba(214, 181, 129, .3);
+            padding: .7rem;
+        }
+        @include tablet{
+            display: flex;
+            background: none;
+            margin: 0;
+            padding: 0;
+            &:hover{
+                background: none;
+                padding: 0;
+            }
+        }
     }
 }
 
-.home-contenedor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1{
-        color: $dorado;
-        font-size: 4rem;
-        margin: 1rem 0;
-        @include tablet{ 
-            font-size: 7rem;
-        }
-    }
-    p{
-        margin: 1rem;
-        font-size: 1.5rem;
-        @include tablet{
-            font-size: 2rem;
-        }
-    }
-    p:last-of-type{
-        color: $dorado;
-        font-style: italic;
-        font-size: 1.5rem;
-        @include tablet{
-            font-size: 2.5rem;
-        }
-    }
-
-}
