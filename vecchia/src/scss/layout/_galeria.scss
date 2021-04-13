@@ -5,12 +5,15 @@
     background-size: cover;    
 }
 .glaeria-img{
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    img{
-    grid-template-columns: repeat (2, 1fr);
-        
+    display: flex;
+    .img-conainer{
+        gap: 0!important;
     }
         
-}
+        
+    
+    }
+
+        
+
     

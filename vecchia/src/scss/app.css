@@ -345,6 +345,14 @@ template {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 /** Media Queries **/
 html {
   font-size: 62.5%;
@@ -639,14 +647,12 @@ h3 {
 }
 
 .glaeria-img {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: repeat 2, 1fr;
-      grid-template-columns: repeat 2, 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.glaeria-img img {
-  -ms-grid-columns: repeat 2, 1fr;
-      grid-template-columns: repeat 2, 1fr;
+.glaeria-img .img-conainer {
+  gap: 0 !important;
 }
 /*# sourceMappingURL=app.css.map */
