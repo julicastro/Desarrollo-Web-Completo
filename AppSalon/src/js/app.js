@@ -85,42 +85,39 @@ function cambiarSeccion() {
 
 async function mostrarServicios() {
     try {
-        const resultado = await fetch('./servicios.json');
+
+        const url = 'http://localhost:8080/servicios.php';
+
+        const resultado = await fetch(url);
+  
         const db = await resultado.json();
+        console.log(db);
 
-        const { servicios } = db;
+        // const { servicios} = db;
 
-        // Generar el HTML
-        servicios.forEach(servicio => {
-            const { id, nombre, precio } = servicio;
+        db.forEach( servicio => {
 
-            // DOM Scripting
-            // Generar nombre de servicio
+            const { id, nombre, precio } = servicio;
+
             const nombreServicio = document.createElement('P');
-            nombreServicio.textContent = nombre;
             nombreServicio.classList.add('nombre-servicio');
+            nombreServicio.textContent = nombre;
 
-            // Generar el precio del servicio
             const precioServicio = document.createElement('P');
-            precioServicio.textContent = `$ ${precio}`;
             precioServicio.classList.add('precio-servicio');
-
-            // Generar div contenedor de servicio
+            precioServicio.innerHTML = `$ ${precio}`;
+            
             const servicioDiv = document.createElement('DIV');
             servicioDiv.classList.add('servicio');
             servicioDiv.dataset.idServicio = id;
-
-            // Selecciona un servicio para la cita
             servicioDiv.onclick = seleccionarServicio;
 
-
-            // Inyectar precio y nombre al div de servicio
+            // Inyectar a ServicioDiv
             servicioDiv.appendChild(nombreServicio);
             servicioDiv.appendChild(precioServicio);
 
-            // Inyectarlo en el HTML
-            document.querySelector('#servicios').appendChild(servicioDiv);
-        })
+            document.querySelector('#servicios').appendChild(servicioDiv)
+        });
     } catch (error) {
         console.log(error);
     }
