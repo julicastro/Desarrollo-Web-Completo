@@ -8,7 +8,7 @@
     background-color: lighten($gris, 5);
     border: 1px solid darken($gris, 10);
     margin-bottom: 2rem;
-    
+
     .contenido-anuncio {
         padding: 2rem;
     }
@@ -22,7 +22,6 @@
     color: $verde;
     font-weight: $bold;
     font-size: 3rem;
-    text-align: center;
 }
 
 .iconos-caracteristicas {
@@ -30,7 +29,7 @@
     list-style: none;
     padding: 0;
     max-width: 40rem;
-    
+
     li {
         flex: 1;
         display: flex;
