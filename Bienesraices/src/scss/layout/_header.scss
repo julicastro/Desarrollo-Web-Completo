@@ -1,6 +1,10 @@
-.inicio {
+.no-webp .inicio {
     background-image: url(../img/header.jpg);
 }
+.webp .inicio {
+    background-image: url(../img/header.webp);
+}
+
 .header {
     background-color: $grisOscuro;
     padding: 1rem 0 3rem 0;

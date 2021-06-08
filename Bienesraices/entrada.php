@@ -1,6 +1,6 @@
 <?php 
-    require "includes/funciones.php";
-    includeTemplate('header');
+    require 'includes/funciones.php';
+    incluirTemplate('header');
 ?>
 
     <main class="contenedor seccion contenido-centrado">
@@ -8,7 +8,9 @@
 
    
         <picture>
-            <img loading="lazy" src="src/img/destacada2.jpg" alt="imagen de la propiedad">
+            <source srcset="build/img/destacada2.webp" type="image/webp">
+            <source srcset="build/img/destacada2.jpg" type="image/jpeg">
+            <img loading="lazy" src="build/img/destacada2.jpg" alt="imagen de la propiedad">
         </picture>
 
         <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
@@ -21,7 +23,6 @@
         </div>
     </main>
 
-    <?php 
-    require "includes/funciones.php";
-    includeTemplate('footer');
+<?php 
+    incluirTemplate('footer');
 ?>

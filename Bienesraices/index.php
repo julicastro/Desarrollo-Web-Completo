@@ -1,6 +1,6 @@
 <?php 
-    require "includes/funciones.php";
-    includeTemplate('header', $inicio=true);
+    require 'includes/funciones.php';
+    incluirTemplate('header', $inicio = true);
 ?>
 
     <main class="contenedor seccion">
@@ -8,17 +8,17 @@
 
         <div class="iconos-nosotros">
             <div class="icono">
-                <img src="src/img/icono1.svg" alt="Icono seguridad" loading="lazy">
+                <img src="build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
                 <h3>Seguridad</h3>
                 <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
             </div>
             <div class="icono">
-                <img src="src/img/icono2.svg" alt="Icono Precio" loading="lazy">
+                <img src="build/img/icono2.svg" alt="Icono Precio" loading="lazy">
                 <h3>Precio</h3>
                 <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
             </div>
             <div class="icono">
-                <img src="src/img/icono3.svg" alt="Icono Tiempo" loading="lazy">
+                <img src="build/img/icono3.svg" alt="Icono Tiempo" loading="lazy">
                 <h3>A Tiempo</h3>
                 <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
             </div>
@@ -28,101 +28,11 @@
     <section class="seccion contenedor">
         <h2>Casas y Depas en Venta</h2>
 
-        <div class="contenedor-anuncios">
-            <div class="anuncio">
-                <picture>
-                    <img loading="lazy" src="src/img/anuncio1.jpg" alt="anuncio">
-                </picture>
+        <?php 
 
-                <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.php" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
-
-            <div class="anuncio">
-                <picture>
-                    <img loading="lazy" src="src/img/anuncio2.jpg" alt="anuncio">
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <h3>Casa terminados de lujo</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.php" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
-
-            <div class="anuncio">
-                <picture>
-                    <img loading="lazy" src="src/img/anuncio3.jpg" alt="anuncio">
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,0000,000</p>
-
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="src/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a href="anuncio.php" class="boton-amarillo-block">
-                        Ver Propiedad
-                    </a>
-                </div><!--.contenido-anuncio-->
-            </div><!--anuncio-->
-
-        </div> <!--.contenedor-anuncios-->
+            $limite = 3;
+            include 'includes/templates/anuncios.php';
+        ?>
 
         <div class="alinear-derecha">
             <a href="anuncios.php" class="boton-verde">Ver Todas</a>
@@ -142,7 +52,9 @@
             <article class="entrada-blog">
                 <div class="imagen">
                     <picture>
-                        <img loading="lazy" src="src/img/blog1.jpg" alt="Texto Entrada Blog">
+                        <source srcset="build/img/blog1.webp" type="image/webp">
+                        <source srcset="build/img/blog1.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/blog1.jpg" alt="Texto Entrada Blog">
                     </picture>
                 </div>
 
@@ -161,7 +73,9 @@
             <article class="entrada-blog">
                 <div class="imagen">
                     <picture>
-                        <img loading="lazy" src="src/img/blog2.jpg" alt="Texto Entrada Blog">
+                        <source srcset="build/img/blog2.webp" type="image/webp">
+                        <source srcset="build/img/blog2.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/blog2.jpg" alt="Texto Entrada Blog">
                     </picture>
                 </div>
 
@@ -189,8 +103,6 @@
             </div>
         </section>
     </div>
-
-    <?php 
-    require "includes/funciones.php";
-    includeTemplate('footer');
+<?php 
+    incluirTemplate('footer');
 ?>

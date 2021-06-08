@@ -4,7 +4,6 @@ Mis sitios web
 
 ## FreelanceWebSite
 https://firstfreelanceproyect.netlify.app/
-![1](https://user-images.githubusercontent.com/70999224/113775364-f6b74e80-96fe-11eb-92a7-1101a9968909.JPG)
 
 ## FrontEnd Store
 https://frontendstorepractice.netlify.app/

@@ -10,7 +10,6 @@ function darkMode() {
     const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
     // console.log(prefiereDarkMode.matches);
-    // lee las preferencias del sistema
 
     if(prefiereDarkMode.matches) {
         document.body.classList.add('dark-mode');
@@ -41,6 +40,5 @@ function eventListeners() {
 function navegacionResponsive() {
     const navegacion = document.querySelector('.navegacion');
 
-    // toggle es como un if. si no la tiena la agrega, si la tiene las elimina
     navegacion.classList.toggle('mostrar')
 }
