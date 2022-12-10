@@ -1,26 +1,14 @@
-# WebPages
-Mis sitios web
-# Links:
+# UniversidadJava
+Contiene toda la práctica realizada en el curso de Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL
 
-## FreelanceWebSite
-https://firstfreelanceproyect.netlify.app/
+Link: https://www.udemy.com/share/1013ea3@Z0KZ2ie-X5kj1I6-rX7Hq4xmUwUkCKc1sy1z5LsUwg4CU0-CZt5sH7WFyi7bJcbVZQ==/
 
-## FrontEnd Store
-https://frontendstorepractice.netlify.app/
-![2](https://user-images.githubusercontent.com/70999224/111582840-2aefbd00-879a-11eb-94e6-d17b0fb57976.JPG)
+IDE: Visual Studio Code
 
-## BlogDeCafé
-https://blofcafeproyect.netlify.app/
-![3](https://user-images.githubusercontent.com/70999224/111860002-7386b200-8923-11eb-970f-3bf111e749e3.JPG)
+El curso abarca los siguientes conceptos:
 
-## FestivalDeMusica
-https://festivalmusicalemprock.netlify.app/
-![4](https://user-images.githubusercontent.com/70999224/112940738-f7028900-9103-11eb-870a-860c80b30852.JPG)
-
-## AppSalónBellaza
-https://appsalonbelleza.netlify.app/
-![5](https://user-images.githubusercontent.com/70999224/113775269-d6878f80-96fe-11eb-8466-1bea8593a968.JPG)
-
-
-
-
+- HTML, CSS, Javascript
+- Grid y Flexbox
+- SASS y Gulp
+- Node.js dependencias
+- PHP

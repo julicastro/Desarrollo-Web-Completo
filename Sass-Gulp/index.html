@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <h1>npm install sass</h1>
+
+    <p>
+        Las dependencias, una vez q hagas deploy las va a instalar,
+        pero, las q son de desarrollo NO. Las vas a tener localmente
+        mientras creas el proyecto. La de SASS es de desarrollo.
+    </p>
+    <p>
+        Una vez terminado el desarrollo se puede eliminar ya q se
+        recupera muy facilmente con el package.json. con el <span>npm install</span </p>
+    <p>
+        Lo q se ve con Gulp es mas avanzado q con Live-Sass-Compiler
+    </p>
+
+    <h1>Script</h1>
+    <p>
+        En el package.json tenemos la seccion "scripts". El package.json puede
+        ejecutar los binarios y almacenar las dependencias. agregamos
+        sass al scrpit y agregamos q es lo q se va a ejecutar cuando
+        mandemos a llamar a ese script.
+        Eso manda a buscar si existe dicha carpeta en el node-modules.
+        Hay q tener en cuenta q no todas las dependencias tienen binarios
+    </p>
+    <p>
+        <b>
+            "scripts": {
+            "sass": "sass"
+            },
+        </b>
+    </p>
+    <p>
+        El lado derecho es el binario, el izquierdo es el script q lo
+        va a mandar a llamar
+    </p>
+    <p>
+        <b>
+            "scripts": {
+            "sass": "sass src/scss"
+            },
+        </b>
+    </p>
+    <p>
+        Lo q se agrega ahi es la ruta del archivo. no hace falta poner
+        este ultimo. lo compila pero hay q indicarle donde guardar
+    </p>
+    <p>
+        <b>
+            "scripts": {"sass": "sass src/scss:build/css"},
+        </b>
+    </p>
+    <p>
+        Finalmente estos scrpits se llaman con <span>npm run sass</span> (npm run "nombre del scrpit")
+    </p>
+    <p>
+        Podemos agregarle <span>--watch </span>para q realice los cambios de forma automatica
+    </p>
+    <p>
+        <b>
+            "scripts": {
+            "sass": "sass --watch src/scss:build/css"
+            },
+        </b>
+    </p>
+    <p>
+        CRTL + C para terminar el watch
+    </p>
+
+</body>
+
+</html>

@@ -1,2 +1,0 @@
-// Alerta
-//alert("Hola mundo");
