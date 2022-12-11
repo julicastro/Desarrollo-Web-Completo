@@ -1,22 +1,28 @@
-$rojo: rgb(214, 214, 214);
-
-body{
-    background-color: $rojo;
+body {
+  background-color: rgb(214, 214, 214);
 }
 
 body {
-    width: 50%;
+  width: 50%;
+  margin: auto;
 }
 
 p {
-    font-weight: bold;
-    font-size: 30px;
+  font-size: 30px;
 }
 
 h1 {
-    color: rgb(0, 255, 234);
+  color: rgb(9, 108, 99);
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
 }
 
 span {
-    color: red;
+  color: red;
+  font-weight: bold;
 }
+
+
+/*# sourceMappingURL=app.css.map */

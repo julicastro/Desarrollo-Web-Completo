@@ -12,8 +12,9 @@ function tarea() {
 /* export. "nombre con el q lo llamo" */
 exports.tarea = tarea;
 
-const { src, dest } = require('gulp');
+const { src, dest, watch } = require('gulp');
 const sass = require("gulp-sass")(require('sass'));
+const plumber = require("gulp-plumber");
 
 /*
  el gulp este es el del package.json
@@ -27,7 +28,8 @@ extraigo funciones q incluye gulp
 
 function css(done) {
 
-    src('src/scss/app.scss') // 1 -> identificar archivo sass
+    src('src/scss/**/*.scss') // 1 -> identificar archivo sass
+        .pipe(plumber()) // 1 bis -> error no detiene workflow
         .pipe(sass()) // 2 -> compilarlo
         .pipe(dest("build/css")); // 3 -> almacenarla en disco duro
     /* pipe() es algo q se ejecuta dsp de la funcion. puedo tener muchos*/
@@ -35,6 +37,14 @@ function css(done) {
     done();
 }
 
+function dev(done) {
+    watch('src/scss/**/*.scss', css)
+    /* mantiene abierta la funcion */
+    done();
+}
+
+
 exports.css = css;
+exports.dev = dev;
 
 

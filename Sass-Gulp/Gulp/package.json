@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass --watch src/scss:build/css",
     "tarea": "gulp tarea",
-    "css": "gulp css"
+    "dev": "gulp dev"
   },
   "keywords": [
     "SASS",
@@ -18,5 +18,8 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.56.2"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1"
   }
 }

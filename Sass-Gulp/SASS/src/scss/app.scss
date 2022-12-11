@@ -6,6 +6,7 @@ body{
 
 body {
     width: 50%;
+    margin: auto;
 }
 
 p {
@@ -15,8 +16,14 @@ p {
 
 h1 {
     color: rgb(0, 255, 234);
+    border-bottom: 1px solid black;
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
 }
 
 span {
     color: red;
+    font-weight: bold;
+
 }
