@@ -37,6 +37,61 @@
     <h1>Gulp Plumber</h1>
     <p>Para evitar q un error en sass corte mi workflow</p>
     <p>Utilizo <span>npm i gulp-plumber</span></p>
+    <h1>Gulp Imagenes</h1>
+    <p>Tranformar imagenes a webp q pesa menos</p>
+    <p><span>npm i --save-dev gulp-webp</span></p>
+    <p>Serie: todas las tareas se ejecutan de forma secuencial</p>
+    <p>Parallel: al mismo tiempo</p>
+    <p>Para reducir el tamaño de las imagenes instalamos lo siguiente:
+        <span>npm i --save-dev gulp-imagemin@7.1</span>. esto me lleva a
+        instalar otra dependencia para limpiar cache del procesamiento
+        de imagenes. <span>npm i --save-dev gulp-cache</span>
+    </p>
+    <p>Tendremos la misma imagen con diferentes formatos por
+        si determinado navegador no lo soporta
+    </p>
+    <h1>Imagenes Avif</h1>
+    <p><b>NUEVO FORMATO DE IMAGEN (2020)</b></p>
+    <p><span>npm i --save-dev gulp-avif</span></p>
+    <p>Hacemos lo mismo q con <span>versionWebp</span>:</p>
+    <p><b>const avif = require('gulp-avif')</b></p>
+    <p><b>
+            function versionAvif(done) {
+            const opciones = {
+            quality: 50 // 0 a 100
+            };
+            src('src/img/**/*.{png, jpg}')
+            .pipe(avif(opciones))
+            .pipe(dest('build/img'))
+            done();
+            }
+        </b></p>
+    <p><b>exports.dev = parallel(imagenes, versionWebp, dev);</b></p>
+    <h1>Formatos de Imagen</h1>
+    <p>Para aplicar varios formatos de imagen usamos <span>Picture</span></p>
+    <picture>
+        <source srcset="build/img/609803.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="build/img/609803.png">
+    </picture>
+    <p>Si no la encuentra usa la png</p>
+    <p>Tanto el width y height del html como en el img del css
+        se recomienda hacerlo así.
+    </p>
+    <p>
+        <b>
+            img{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            display: block;
+            }
+        </b>
+    </p>
+    <p><span>Como todo esto es mucho codigo utilizamos Snippets en HTML</span></p>
+    <picture>
+        <source srcset=".webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src=""> alt=""
+    </picture>
 </body>
 
 </html>
