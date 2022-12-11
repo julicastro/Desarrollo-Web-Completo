@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <h1>Gulp</h1>
+    <p>
+        Permite tener multiples tareas y realizar diferentes acciones.
+        Optimizamos imagenes, cambiar formatos, unir codigo de js, css.
+        Necesitamos un workflow q automatice tareas.
+    </p>
+    <p>Utilizamos <span>npn i --save-dev gulp</span></p>
+    <p>Va a ser una dependencia de desarrollo al igual q la de sass</p>
+    <p>En la raiz del proyecto creamos el <span>gulpfile.js</span> q va a ser
+        el contenedor de nuestras tareas</p>
+    <p>Se conecta package.json con gulpfile</p>
+    <p>Las tareas en <span>gulpfile.js</span> se llaman con
+        <span>npx gulp primerTarea</span>
+    </p>
+    <p>NPX se instala junto a node. Nos permite ejecutar paquetes
+        sin necesidad de instalarlos globalmente
+    </p>
+    <p>tambien podemos llamar a la funcion con <span>npm</span>. para eso debemos agregar lo siguiente al
+        script del package.json:</p>
+    <p><b> "scripts": {"sass": "sass --watch src/scss:build/css", "tarea": "gulp tarea"},</b></p>
+    <p>Y luego puedo ejecutar con <span>npm run tarea</span></p>
+    <h1>Compilar SASS con Gulp</h1>
+    <p>hago <span>npm i --save-dev gulp-sass</span></p>
+
+</body>
+
+</html>
